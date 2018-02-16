@@ -1,15 +1,154 @@
 <!doctype html>
-<html>
+<html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<title>CP3402/CP5637 Subject Calendar</title>
-    <style type="text/css">
-        table {border-collapse: collapse}
-        td {border: thin black solid; padding: 0.5em}
-    </style>
+  <title>CP3402/CP5637 Subject Calendar</title>
+  <meta charset="UTF-8">
+  <style media="screen" type="text/css">
+    body {
+      background-color: #ffffff;
+      color: #000000;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: left;
+      margin: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      font-weight: normal;
+    }
+
+    h4 {
+      font-style: italic;
+    }
+
+    table {border-collapse: collapse}
+    td {border: thin black solid; padding: 0.5em}
+
+    li {
+      margin-bottom: 0.75em;
+    }
+
+    .smaller {
+      font-family: "Times New Roman", Times, serif;
+      font-size: small
+    }
+
+    code,
+    .codeandnames {
+      font-family: "Courier New", Courier, monospace;
+      text-decoration: none;
+      font-weight: bold
+    }
+
+    code.section {
+      display: block;
+      margin-top: 1em;
+    }
+
+    .highlightcolour {
+      color: #FF3300;
+      background-color: #FFFFFF
+    }
+
+    .breakhere {
+      page-break-before: always
+    }
+
+    .indent {
+      margin-left: 3em;
+      margin-bottom: 3em;
+    }
+
+    .rightpanel {
+      clear: both;
+      float: right;
+      background-color: #f0f3ff;
+      margin-right: .2em;
+      width: 25%;
+      margin-left: 1em;
+      margin-bottom: 30px;
+      border: 1px solid #97bfff;
+    }
+
+    .rightpanel h4 {
+      background-color: #FFFFCC;
+      font-size: 0.8em;
+      margin: 0;
+      font-style: normal;
+      padding: 0.2em 0.3em;
+    }
+
+    .rightpanel p {
+      font-size: 0.9em;
+      margin: 0;
+      padding: 0.5em 0.3em 0.2em;
+    }
+
+    .notebox {
+      clear: both;
+      background-color: #FFFFCC;
+      border: #97bfff 1px solid;
+      margin-right: 1.2em;
+      margin-left: 1.2em;
+      padding: 0.5em;
+    }
+
+    .notebox h4 {
+      font-size: 1.1em;
+      margin: 0;
+      font-style: normal;
+      padding: 0.2em 0.3em 0.2em 1em;
+      background-color: #97bfff;
+    }
+
+    .notebox p {
+      margin: 0;
+      padding: 0.5em 0.3em 0.2em;
+    }
+
+    #footer {
+      position: relative;
+      clear: both;
+      text-align: center;
+      font-size: 0.7em;
+      padding: 5px 3px;
+      background-color: #2c2e38;
+      color: #d7ceb2;
+      text-shadow: 1px 1px 0 #5c5f72;
+      font-family: 'BazarMedium', 'Arial', sans-serif;
+      border-radius: 15px 15px 0 0;
+      box-shadow: 5px -5px 5px #666;
+    }
+
+    #container {
+      margin: 1em;
+    }
+
+    #header {
+      padding: 5px 15px;
+      background-color: #2c2e38;
+      color: #d7ceb2;
+      text-shadow: 1px 1px 0 #2c2e38, 2px 2px 0 #5c5f72;
+      font: 1.5em 'BazarMedium', Arial, sans-serif;
+      border-radius: 0 0 15px 15px;
+      box-shadow: 5px 5px 5px #666;
+    }
+
+    #footer a {
+      color: #FC3;
+    }
+
+  </style>
 </head>
 
 <body>
+  <div id="header">CP3402/CP5637 Content Management Systems - Calendar (13-weeks)</div>
+  <div id="container">
+    <h1>CP3402 Calendar</h1>
   <p>
     <strong>Note:</strong> This calendar is for both internal and external students, with the only difference being that internal students have their prac in the week after the lecture (e.g. prac 1 in week 2), and external students will complete their prac in the same week (e.g. prac 1 in week 1).<br />
     The calendar below shows the practicals in the week row that is correct for external students.
@@ -144,5 +283,9 @@
   </tr>
 </table>
 <p>Please note that the sequence of some topics may change due to availability of staff, resources or due to unforeseen circumstances.</p>
+</div>
+<div id="footer">
+  <p>&copy; Lindsay Ward, <a href="http://www.jcu.edu.au/" target="_blank">James Cook University</a> | <a href="#header" target="_self">To Top</a></p>
+</div>
 </body>
 </html>

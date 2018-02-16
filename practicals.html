@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+
+<head>
+  <title>CP3402/CP5637 Content Management Systems - Practicals</title>
+  <meta charset="UTF-8">
+  <style media="screen" type="text/css">
+    body {
+      background-color: #ffffff;
+      color: #000000;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: left;
+      margin: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      font-family: Verdana, Arial, Helvetica, sans-serif;
+      font-weight: normal;
+    }
+
+    h4 {
+      font-style: italic;
+    }
+
+    li {
+      margin-bottom: 0.75em;
+    }
+
+    .smaller {
+      font-family: "Times New Roman", Times, serif;
+      font-size: small
+    }
+
+    code,
+    .codeandnames {
+      font-family: "Courier New", Courier, monospace;
+      text-decoration: none;
+      font-weight: bold
+    }
+
+    code.section {
+      display: block;
+      margin-top: 1em;
+    }
+
+    .highlightcolour {
+      color: #FF3300;
+      background-color: #FFFFFF
+    }
+
+    .breakhere {
+      page-break-before: always
+    }
+
+    .indent {
+      margin-left: 3em;
+      margin-bottom: 3em;
+    }
+
+    .rightpanel {
+      clear: both;
+      float: right;
+      background-color: #f0f3ff;
+      margin-right: .2em;
+      width: 25%;
+      margin-left: 1em;
+      margin-bottom: 30px;
+      border: 1px solid #97bfff;
+    }
+
+    .rightpanel h4 {
+      background-color: #FFFFCC;
+      font-size: 0.8em;
+      margin: 0;
+      font-style: normal;
+      padding: 0.2em 0.3em;
+    }
+
+    .rightpanel p {
+      font-size: 0.9em;
+      margin: 0;
+      padding: 0.5em 0.3em 0.2em;
+    }
+
+    .notebox {
+      clear: both;
+      background-color: #FFFFCC;
+      border: #97bfff 1px solid;
+      margin-right: 1.2em;
+      margin-left: 1.2em;
+      padding: 0.5em;
+    }
+
+    .notebox h4 {
+      font-size: 1.1em;
+      margin: 0;
+      font-style: normal;
+      padding: 0.2em 0.3em 0.2em 1em;
+      background-color: #97bfff;
+    }
+
+    .notebox p {
+      margin: 0;
+      padding: 0.5em 0.3em 0.2em;
+    }
+
+    #footer {
+      position: relative;
+      clear: both;
+      text-align: center;
+      font-size: 0.7em;
+      padding: 5px 3px;
+      background-color: #2c2e38;
+      color: #d7ceb2;
+      text-shadow: 1px 1px 0 #5c5f72;
+      font-family: 'BazarMedium', 'Arial', sans-serif;
+      border-radius: 15px 15px 0 0;
+      box-shadow: 5px -5px 5px #666;
+    }
+
+    #container {
+      margin: 1em;
+    }
+
+    #header {
+      padding: 5px 15px;
+      background-color: #2c2e38;
+      color: #d7ceb2;
+      text-shadow: 1px 1px 0 #2c2e38, 2px 2px 0 #5c5f72;
+      font: 1.5em 'BazarMedium', Arial, sans-serif;
+      border-radius: 0 0 15px 15px;
+      box-shadow: 5px 5px 5px #666;
+    }
+
+    #footer a {
+      color: #FC3;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header">CP3402/CP5637 Content Management Systems - Practicals (13-weeks)</div>
+  <div id="container">
+    <h1>CP5637 Practicals</h1>
+    <p>Each week, you will get a mark for participating in these practical sessions effectively, and achieving the goals (tasks) set for you.</p>
+    <p><strong>Internal students:</strong> ensure that you show your work to your tutor before you leave the practical class.<br><strong>External students:</strong> upload evidence of your work before the end of the week.
+    </p>
+
+    <h2><a href="#resources">Resources (e.g. Vagrant, hosting, etc.) are available below...</a></h2>
+
+    <h2>Prac 1 - HTML (non-CMS) Web Design</h2>
+    <div class="indent">
+      <p class="notebox"><strong>Task:</strong> Your task in the first prac is to make and publish a <em>very</em> simple website for your <em>startup business</em> for assignment 1.</p>
+      <p>Your assignments are to be done with a CMS, but this prac asks you to create a static website.<br> You are welcome to use <a href="http://getbootstrap.com" target="_blank">Bootstrap</a> or any other non-CMS technology, including online templates/examples.</p>
+      <p>Consider the content and design that your site would need to be able to achieve its goal... and consider what that goal is!</p>
+      <h3>Publishing to Web Hosting</h3>
+      <p>Part of this subject is for you to get used to evaluating, choosing and using site hosting. To get you started, we have arranged with <strong>SiteGround</strong>, so you can <a href="https://www.siteground.com/studentsprogram" target="_blank">sign up for a free
+                account with your JCU email now</a>.</p>
+      <p><em>Publish</em> your simple site in a folder called <em>startup</em><br> For more details on publishing to SiteGround, see their <a href="https://www.siteground.com/tutorials/" target="_blank">tutorials</a>.</p>
+      <p>If you have your own laptop, now might be a good time to start getting the following installed and setup:</p>
+      <ul>
+        <li><a href="https://www.jetbrains.com/phpstorm/" target="_blank">PHPStorm</a> (with account from
+          <a href="https://www.jetbrains.com/shop/eform/students" target="_blank">https://www.jetbrains.com/shop/eform/students</a>) or <a href="http://atom.io">Atom IDE</a>
+        </li>
+        <li><a href="http://vagrantup.com" target="_blank">Vagrant</a> - See below for details
+        </li>
+        <li>Slack, Trello and their mobile apps</li>
+      </ul>
+    </div>
+
+    <h2>Prac 2 - Joomla CMS</h2>
+    <div class="indent">
+      <p>If you did <em>not</em> finish last week's practical task (including uploading), then you should note that you are already <em>falling behind!</em> So you need to allocate more time between classes to do practical work.</p>
+      <p class="notebox"><strong>Task:</strong> make a start on assignment 1 using the <a href="http://joomla.org" target="_blank">Joomla
+            CMS</a>. Again, it can be very simple at this stage.</p>
+      <p>For today, you can use the 1-click Joomla installer through SiteGround and work directly on the live site online, but you need to start working towards having a local development environment and having your sites installed there.</p>
+    </div>
+
+    <h2>Prac 3 - WordPress CMS</h2>
+    <div class="indent">
+      <p class="notebox"><strong>Task:</strong> to get your mark today, you need to create a simple WordPress site for your startup (first assignment), hosted online.</p>
+      <p>You can re-use everything from the site you made last week in Joomla, so this task is focused more on learning and using WordPress rather than developing content and design for your site.</p>
+    </div>
+
+    <h2>Prac 4 - Local Development + Deployment</h2>
+    <div class="indent">
+      <p class="notebox"><strong>Task:</strong> get a local development environment setup and be able to deploy your local sites to "production". Note that you don't have to have this totally figured out today; it will take time to experiment with different options and
+        adjust your system as you learn and try new things.
+      </p>
+      <p>If you're working on a JCU computer, your options are more limited, but you can use <a href="github.com/lindsaymarkward/WPDistillery">this custom version of WPDistillery vagrant</a> (or even <a href="http://usbwebserver.net" target="_blank">USB WebServer</a>) to run a local environment. You will need to export your work to take with you when you leave.</p>
+      <p>If you have already got a local development + deployment workflow going, then continue to work on your sites according to the assignment requirements (e.g. have you got plugins/extensions installed?).</p>
+    </div>
+
+    <h2>Prac 5 - WordPress Child Theme</h2>
+    <div class="indent">
+      <p class="notebox"><strong>Task:</strong> Using either your first assignment or another WordPress site, create a child theme with at least 6 customisations.</p>
+      <p>If you're using VVV and the topdown dashboard, you can use it to start your new child theme. <br> Otherwise, <a href="https://developer.wordpress.org/themes/advanced-topics/child-themes" target="_blank">follow
+                the developer docs</a> to create a folder inside themes with the recommended naming convention, copy or create a new style.css file (and remember to refer to the parent theme in the comment, e.g. if the parent theme were "twentysixteen",
+        <code>Template: twentysixteen</code>), and create functions.php to enqueue the style file(s).</p>
+      <p>Use your browser's <strong>inspector</strong> to make live changes, then copy these to your CSS file.</p>
+    </div>
+
+    <h2>Prac 6 - Group Setup</h2>
+    <div class="indent">
+      <p class="notebox"><strong>Task:</strong> complete setting up all of the teamwork tools, make at least one GitHub commit (see a message in your Slack group), and complete your group agreement in your project board.
+      </p>
+      <p>Please meet in your teams to talk about your assignment 2 project team and to start getting organised:</p>
+      <ul>
+        <li>You will have been added to a private group on <strong>Slack</strong> (check this now)</li>
+        <li>(everyone) Login to <strong>GitHub</strong>, then create or join your group's GitHub repo using <a href="https://classroom.github.com/group-assignment-invitations/5f6b314288f1a789775131fbd5e917b1" target="_blank">this GitHub Classroom link</a>.<br>          If you are first to create the GitHub repo, then when asked for your repo name, it should be the same as your Slack group name so that it's easy to find (e.g. cp3402-2017-team01).
+        </li>
+        <li><em>Option: If you would prefer to use <strong><a
+                    href="https://help.github.com/articles/about-project-boards/">GitHub
+                Projects</a></strong> instead of <strong>Trello</strong>, then that is fine.</em><br> (one person) copy the <a href="https://trello.com/b/07nYDApo/web-project-dev-template" target="_blank">Trello
+                    template board</a>, <strong>make sure it is <em>public</em></strong> and add all of the other team members.
+          <br> You do not need to use your Trello board in the way that this template is set out - it's just an example. How you do things is up to you, but the <strong>group agreement</strong> needs to stay on your board. Everything else is your choice.
+        </li>
+        <li>(one person) <strong>Integrate </strong>both your GitHub repo and Trello board with your Slack group (use "integrations" in Slack). <a href="https://github.com/CP1406/ProjectManagement/wiki" target="_blank">More details (inc.
+                    screenshots) for integrating GitHub and Trello with your Slack channel are here.</a><br> When you add an integration (GitHub, Trello Alerts), it might warn you that we've reached the integration limit. This is not a problem because
+          we're just adding more instances of existing integrations. Ignore the warning (but don't try and add an integration for a different app).
+        </li>
+        <li>(everyone) Work together to complete the <strong>Group Agreement & Contacts</strong> section of the Trello board.<br> This is how you decide on your shared team expectations, and is an important step. Don't skip through it, but think about it
+          carefully.
+        </li>
+        <li>(everyone) Start doing some project planning, including adding team members to tasks on your Trello board...
+          <br> One example of a suitable task for each member to do this week would be to investigate and test different hosting platforms.
+        </li>
+      </ul>
+    </div>
+
+    <h2>Group Project Work Pracs</h2>
+    <div class="indent">
+      <p class="notebox">Marks for the remaining practicals are for effective participation in your stand-up + work done on your project.<br> You should usually be able to demonstrate work by GitHub commits, and we should be able to see a history of completed work in your
+        project board.<br /><strong>Note</strong> that some remaining pracs have extra requirements for individual work in addition to the group work component.</p>
+      <p>In these later practicals, you will work in your project teams to develop the project assignment.
+      </p>
+      <p>Think of each week as a <em>sprint</em>.<br> Each of these practicals will start with a <strong>stand-up meeting</strong> for each group.<br>
+        <a href="http://www.lynda.com/Business-Skills-tutorials/Having-daily-stand-up-meetings/175075/437998-4.html" target="_blank">Here is a short video about stand-ups to help everyone understand them</a>.</p>
+      <p> Make sure you actually stand for your meeting! This IS what many industry teams do every single day, so this is preparing you for industry. <br> These meetings are <strong>NOT</strong> for you to present <em>to</em> the lecturer – it is for you
+        to discuss your work; and the lecturer/tutor will just witness the meetings (and possibly add prompts if needed).
+      </p>
+      <p>Here’s how each stand-up should go. Each person tells the rest of their team:</p>
+      <ul>
+        <li>What they worked on last week (since the last meeting)</li>
+        <li>Any road-blocks or things they’re stuck on (and might need help with)</li>
+        <li>What they plan to achieve in the coming week (before the next meeting)</li>
+      </ul>
+      <p>Be honest about your progress, and help each other. Discuss who is doing what, and then use your project board to assign tasks (use "members"). </p>
+      <p>After your short (no more than 5 minutes) meeting, get to work, developing your project site, including working out and using your development and deployment workflow.</p>
+
+      <p>Make sure you continue to research modern development workflows and adjust your team's workflow as you learn, and based on your experiences. You should be working with multiple <em>local</em> development environments (one per member), a
+        <em>staging</em> and a <em>production</em> environment.</p>
+
+      <p>Use <strong>GitHub</strong> to keep track of and version control your code outputs. You should probably set your repo to track your <code>wp-content</code> folder. Use a .gitignore and/or remove files that you don't need to track (like other themes).</p>
+    </div>
+
+    <h2>Prac 7 - PHP (& Group Project Work)</h2>
+    <div class="indent">
+      <p class="notebox"><strong>Task:</strong> Write and publish PHP code to demonstrate the features below (the content of the page/site is up to you).</p>
+      <ul>
+        <li>echoing different kinds of HTML</li>
+        <li>selection - if/else statements</li>
+        <li>loops - for, while, foreach (use an array)</li>
+        <li>functions with parameters</li>
+        <li>include - make two pages that include a common header and/or footer</li>
+      </ul>
+      <p>You may like to fork <a href="https://github.com/lindsaymarkward/theadviceshop" target="_blank">The Advice
+            Shop site</a>, get it running, then update it by making a proper login system and other nice enhancements.
+      </p>
+    </div>
+
+    <h2>Prac 9 - Sass (& Group Project Work)</h2>
+    <div class="indent">
+      <p class="notebox"><strong>Task:</strong>Demonstrate your ability to use Sass and a suitable workflow (preferably automated) for creating CSS, including the features below (the content is up to you).</p>
+      <ul>
+        <li>variables</li>
+        <li>functions</li>
+        <li>mixins</li>
+        <li>extend/inheritance</li>
+      </ul>
+    </div>
+
+    <h2>Penultimate Prac - Presentation Rehearsals</h2>
+    <div class="indent">
+      <p class="notebox"><strong>Task:</strong> stand-up meeting + group rehearsal of presentation</p>
+      <p>Don't worry if your presentation is not "finished" at this stage. You can start rehearsing with an unfinished plan or slide deck, and you will more readily see where your gaps are. The more you rehearse, the better you'll be.</p>
+      <p>Aim to run through your presentation 3 times. After each time, discuss the areas that need improvement, then improve those and rehearse again. Use the assignment document for details of requirements and expectations. As you evaluate your group's
+        practice presentations, you can "mark" them with the supplied rubric - to help identify areas to work on.</p>
+      <p>Remember to plan and practise a <em>realistic demonstration</em>.</p>
+    </div>
+
+    <h2>Final Prac - Presentations!</h2>
+    <div class="indent">
+      <p>See the assignment document for details. There is no mark for the final practical, only for the presentation.
+      </p>
+    </div>
+
+    <h1 id="resources">Resources</h1>
+    <p><a href="https://www.jcu.edu.au/library/learn/lynda.com" target="_blank">https://www.jcu.edu.au/library/learn/lynda.com</a><br> Here you will find most of the WordPress resources you will need in the subject, and more. Schedule time each week to watch
+      and practise.</p>
+    <h2>Vagrant</h2>
+    <p><a href="http://vagrantup.com" target="_blank">Vagrant</a> is a fabulous tool for configuring and running Virtual Environments on your local computer. You will need <a href="https://www.virtualbox.org/">VirtualBox</a></p>
+    <p>Here are some things to get started with (install):</p>
+    <ul>
+      <li>First, <a href="https://webdevstudios.com/2015/01/14/getting-started-vagrant-vvv-local-development/" target="_blank">here's a good overview of Vagrant, VVV and VV</a></li>
+      <li>VVV for WordPress: <a href="https://github.com/Varying-Vagrant-Vagrants/VVV">https://github.com/Varying-Vagrant-Vagrants/VVV</a>
+      </li>
+      <li>VV Site Wizard: <a href="https://github.com/bradp/vv">https://github.com/bradp/vv</a></li>
+      <li>Add-on Dashboard: <a href="https://github.com/topdown/VVV-Dashboard">https://github.com/topdown/VVV-Dashboard</a></li>
+      <li><strong>WordMove</strong>: a handy tool for copying (deploying) from your Vagrant localhost environment to another (staging/production) site: <a href="https://github.com/welaika/wordmove">https://github.com/welaika/wordmove</a><br> You install this
+        IN Vagrant - after <code>vagrant ssh</code><br>
+        <div class="notebox"><strong>Note:</strong> if you are using VVV (with ruby 2.4), you need to run <code>rvm
+                group add rvm "$USER"</code> then log out and back in again <em>before</em> installing wordmove.<br> If you get an error something like <code>"sql_adapter.rb:44:in `gsub!': invalid byte sequence in
+                    US-ASCII"</code>, edit your <code>.profile</code> file as described in the <a href="https://github.com/welaika/wordmove/wiki/invalid-byte-sequence-in-UTF-8-while-pushing---pulling-db">Wordmove
+                    wiki</a>
+        </div>
+      </li>
+
+      <li>Mac GUI for managing Vagrant boxes: <a href="http://vagrantmanager.com">http://vagrantmanager.com</a></li>
+      <li>And a popular Vagrant box for a more generic Web server (LAMP stack; no CMS installed): <a href="https://github.com/scotch-io/scotch-box">https://github.com/scotch-io/scotch-box</a></li>
+      <li>Lindsay's version of <strong>WPDistillery</strong> that sets up WordPress on a scotch-box VM and redirects http://localhost:8080 to the VM for use in our labs: <a href="https://github.com/lindsaymarkward/WPDistillery">https://github.com/lindsaymarkward/WPDistillery</a>        </li>
+      <li>Here's Lindsay's <a href="https://github.com/lindsaymarkward/awswordpress" target="_blank">Vagrant project
+            for running WordPress on AWS</a> (see the README for more details)
+      </li>
+    </ul>
+
+    <h2>Development and Deployment Workflows</h2>
+    <p>Here are some useful articles about WordPress development-deployment workflows:</p>
+    <ul>
+      <li><a href="https://zach-adams.com/2014/09/ultimate-wordpress-development-workflow/">https://zach-adams.com/2014/09/ultimate-wordpress-development-workflow/</a> (Vagrant (VVV) and WordMove)
+      </li>
+      <li>
+        <a href="http://roketco.com/log/the-ultimate-workflow-guide-for-teams-building-wordpress-sites-with-acf-timber-foundation-and-local-machines-with-remote-servers-through-vagrant-and-git/">http://roketco.com/log/the-ultimate-workflow-guide-for-teams-building-wordpress-sites-with-acf-timber-foundation-and-local-machines-with-remote-servers-through-vagrant-and-git/</a>        (which references the WP-Sync-DB plugin: <a href="https://github.com/wp-sync-db/wp-sync-db">https://github.com/wp-sync-db/wp-sync-db</a>)
+      </li>
+    </ul>
+
+    <h2>Database Tools</h2>
+    <ul>
+      <li><a href="https://www.sequelpro.com/">(Mac only) Sequel Pro</a></li>
+      <li><a href="https://dev.mysql.com/downloads/workbench">(Windows and Mac) MySql Workbench</a></li>
+    </ul>
+
+    <h2>Hosting</h2>
+    <p>Here are some free options for Web hosting suitable for your CMS sites.</p>
+    <ul>
+      <li><a href="https://www.siteground.com/studentsprogram" target="_blank">SiteGround</a> (sign up for a free account with your JCU email). Features one-click WordPress and Joomla installations.<br> See: <a href="https://www.siteground.com/tutorials/ssh"
+          target="_blank">how to set up SSH</a></li>
+      <li><a href="https://aws.amazon.com/education/awseducate" target="_blank">AWS - Amazon Web Services</a> (and <a href="http://www.hackpundit.com/aws-free-tier-usage-facts/">some tips about using the free tier</a>)
+      </li>
+      <li><a href="https://education.github.com/pack" target="_blank">Digital Ocean - free via this GitHub Education
+            Pack</a></li>
+    </ul>
+  </div>
+  <div id="footer">
+    <p>&copy; Lindsay Ward, <a href="http://www.jcu.edu.au/" target="_blank">James Cook University</a> | <a href="#header" target="_self">To Top</a></p>
+  </div>
+</body>
+
+</html>

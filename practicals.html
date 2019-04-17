@@ -245,8 +245,8 @@
         <li>(one person) <strong>Integrate </strong>both your GitHub repo and Trello board with your Slack group. <br />
           <a href="https://github.com/CP1406/ProjectManagement/wiki" target="_blank">More details (including screenshots) for integrating GitHub and Trello with your Slack channel are here.</a><br> When you add an integration (GitHub, Trello Alerts),
           it might warn you that we've reached the integration limit. This is not a problem because we're just adding more instances of existing integrations. Ignore the warning (but do not add an integration for a new app).<br /> When you are integrating
-          GitHub with your Slack group, type a slash command in your private group like (change team number)<br />
-          <code>/github subscribe https://github.com/CP3402-2018/cmsa2-cp3402-2019-team00</code>
+          GitHub with your Slack group, type a slash command in your private group like (change last part to your GitHub repo URL)<br />
+          <code>/github subscribe https://github.com/repo</code>
         </li>
         <li>(everyone) Work together to complete the <strong>Group Agreement & Contacts</strong> section of the Trello board.<br> This is how you decide on your shared team expectations, and is an important step. Don't skip through it, but think about it
           carefully. E.g. for the "skills assessment", don't just write "WordPress", but think about and describe what skills (technical and "soft") you want to contribute to the project.
@@ -301,7 +301,7 @@
 
     <h2 id="prac09">Prac 9 - Sass (& Group Project Work)</h2>
     <div class="indent">
-      <p class="notebox"><strong>Task:</strong> demonstrate your ability to use Sass and a suitable workflow (preferably automated) for creating CSS, including the features below (the content is up to you but must be original, not from some Sass tutorial).</p>
+      <p class="notebox"><strong>Task:</strong> demonstrate your ability to use Sass and a suitable workflow (preferably automated) for creating CSS, including the features below in a simple new website (not WordPress). The content is up to you but must be original, not from some Sass tutorial.</p>
       <ul>
         <li>variables</li>
         <li>nesting</li>
@@ -309,20 +309,24 @@
         <li>extend/inheritance</li>
       </ul>
       <p>
-        <strong>Note: </strong> To use Sass on the JCU Lab Macs:
+        <strong>Note: </strong> To use Sass on the JCU Lab Macs (there are options - make sure you change examples and understand, don't just copy-paste ignorantly):
       </p>
       <ul>
         <li>
-          Install and run (vagrant up) the Vagrant VM that has been customised to suit the labs: <a href="https://github.com/lindsaymarkward/WPDistillery">https://github.com/lindsaymarkward/WPDistillery</a>
+          Install and run (<code>vagrant up</code>) the Vagrant VM that has been customised to suit the labs: <a href="https://github.com/lindsaymarkward/WPDistillery">https://github.com/lindsaymarkward/WPDistillery</a>
         </li>
         <li>
-          vagrant ssh into the machine, then put your site under the web folder, /var/www/public/...
+          <code>vagrant ssh</code> into the machine, then put your (new or existing) site under the web folder, e.g. <code>/var/www/public/...</code>
         </li>
         <li>
-          Install Grunt and Sass in the VM, then setup a Gruntfile (e.g. <a href="https://github.com/lindsaymarkward/theadviceshop/blob/sassy/Gruntfile.js">like this one from the in-class demo</a>) and run grunt
+          Install Sass in the Linux VM and test it in your VM terminal, like <code>sass input.scss output.css</code><br>
+          You can then <strong>watch</strong> for changes, like <code>sass --watch styles:styles</code> (where styles is both the input and output directory)
         </li>
         <li>
-          You can then use whatever editor you want to edit your Sass code (e.g. PHPStorm on the Mac) and grunt will auto-update your CSS code when its watcher detects changes
+          If you like you can install a task runner like Grunt or Gulp in the Linux VM, then setup a Gruntfile (e.g. <a href="https://github.com/lindsaymarkward/theadviceshop/blob/sassy/Gruntfile.js">like this one</a>) and run grunt/gulp in your VM terminal.
+        </li>
+        <li>
+          You can then use whatever editor you want to edit your Sass code (e.g. PHPStorm on the Mac) and Grunt will auto-update your CSS code when its watcher detects changes.
         </li>
       </ul>
     </div>

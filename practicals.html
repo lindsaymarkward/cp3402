@@ -309,26 +309,25 @@
         <li>extend/inheritance</li>
       </ul>
       <p>
-        <strong>Note: </strong> To use Sass on the JCU Lab Macs (there are options - make sure you change examples and understand, don't just copy-paste ignorantly):
+        <strong>Note: </strong> To use Sass on the JCU Lab Macs:
       </p>
       <ul>
-        <li>
-          Install and run (<code>vagrant up</code>) the Vagrant VM that has been customised to suit the labs: <a href="https://github.com/lindsaymarkward/WPDistillery">https://github.com/lindsaymarkward/WPDistillery</a>
+        <li>As the installation instructions say, you can install Sass by downloading the package for your operating&nbsp;system <a href="https://github.com/sass/dart-sass/releases/latest">from GitHub</a> and <a href="https://katiek2.github.io/path-doc/">adding it to your <code>PATH</code></a>.
         </li>
         <li>
-          <code>vagrant ssh</code> into the machine, then put your (new or existing) site under the web folder, e.g. <code>/var/www/public/...</code>
-        </li>
-        <li>
-          Install Sass in the Linux VM and test it in your VM terminal, like <code>sass input.scss output.css</code><br>
+          Test it like (example) <code>sass input.scss output.css</code><br>
           You can then <strong>watch</strong> for changes, like <code>sass --watch styles:styles</code> (where styles is both the input and output directory)
         </li>
         <li>
-          If you like you can install a task runner like Grunt or Gulp in the Linux VM, then setup a Gruntfile (e.g. <a href="https://github.com/lindsaymarkward/theadviceshop/blob/sassy/Gruntfile.js">like this one</a>) and run grunt/gulp in your VM terminal.
+          Optional: If you like you can install a task runner like Grunt or Gulp in the Linux VM, then setup a Gruntfile (e.g. <a href="https://github.com/lindsaymarkward/theadviceshop/blob/sassy/Gruntfile.js">like this one</a>) and run grunt/gulp in your VM terminal.
         </li>
         <li>
-          You can then use whatever editor you want to edit your Sass code (e.g. PHPStorm on the Mac) and Grunt will auto-update your CSS code when its watcher detects changes.
+          You can then use whatever editor you want to edit your Sass code (e.g. PHPStorm on the Mac) and Grunt or the watcher will auto-update your CSS code when it detects changes.
         </li>
-      </ul>
+        <li>
+            Alternatively, you could install Sass in a Linux VM like the one that has been customised to suit the labs: <a href="https://github.com/lindsaymarkward/WPDistillery">https://github.com/lindsaymarkward/WPDistillery</a>
+          </li>
+        </ul>
     </div>
 
     <h2 id="prac-practice">Penultimate Prac - Presentation Rehearsals</h2>

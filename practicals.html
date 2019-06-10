@@ -358,14 +358,20 @@
     <p>Here are some things to get started with (install):</p>
     <ul>
       <li>First, <a href="https://webdevstudios.com/2015/01/14/getting-started-vagrant-vvv-local-development/" target="_blank">here's a good overview of Vagrant, VVV and VV</a></li>
-      <li>Lindsay's version of <strong>WPDistillery</strong> that sets up WordPress on a scotch-box VM and redirects http://localhost:8080 to the VM for use in our labs: <a href="https://github.com/lindsaymarkward/WPDistillery">https://github.com/lindsaymarkward/WPDistillery</a> (this is simpler than VVV)</li>
+      <li>3 popular Vagrant configurations for Wordpress are:
+        <ul>
+          <li>WPDistillery: <a href="https://wpdistillery.org/">https://wpdistillery.org/</a> (uses ScotchBox)</li>
+          <li>Lindsay's version of WPDistillery customised to use http://localhost:8080 for use in JCU's Mac labs: <a href="https://github.com/lindsaymarkward/WPDistillery">https://github.com/lindsaymarkward/WPDistillery</a></li>
+          <li>VCCW: <a href="http://vccw.cc/">http://vccw.cc/</a></li>
+          <li>VVV: <a href="https://github.com/Varying-Vagrant-Vagrants/VVV">https://github.com/Varying-Vagrant-Vagrants/VVV</a> and       
+          VV Site Wizard: <a href="https://github.com/bradp/vv">https://github.com/bradp/vv</a>, 
+          Add-on Dashboard for VVV: <a href="https://github.com/topdown/VVV-Dashboard">https://github.com/topdown/VVV-Dashboard</a>
+    </li>
+        </ul>
+      </li>
       <li>Here's Lindsay's <a href="https://github.com/lindsaymarkward/awswordpress" target="_blank">Vagrant project
             for running WordPress on AWS</a> (see the README for more details)
       </li>
-      <li>VVV for WordPress: <a href="https://github.com/Varying-Vagrant-Vagrants/VVV">https://github.com/Varying-Vagrant-Vagrants/VVV</a>
-      </li>
-      <li>VV Site Wizard: <a href="https://github.com/bradp/vv">https://github.com/bradp/vv</a></li>
-      <li>Add-on Dashboard for VVV: <a href="https://github.com/topdown/VVV-Dashboard">https://github.com/topdown/VVV-Dashboard</a></li>
       <li><strong>WordMove</strong>: a handy tool for copying (deploying) from your Vagrant localhost environment to another (staging/production) site: <a href="https://github.com/welaika/wordmove">https://github.com/welaika/wordmove</a><br> You install this
         IN Vagrant - after <code>vagrant ssh</code><br>
         <div class="notebox"><strong>Note:</strong> if you are using VVV with ruby 2.4, you need to run <code>rvm
